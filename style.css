@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 8%;
+    background: transparent;
+    z-index: 1000;
+}
+.logo span{
+    color:rgb(195, 255, 29);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0b912c;
+    letter-spacing: 1px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 40px;
+}
+
+.navLinks a {
+    vertical-align: middle;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+
+.navLinks a:hover {
+    color: #ffa500;
+    transform: translateY(-3px);
+
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+.social-icons a {
+    vertical-align: middle;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+.social-icons a:hover {
+    color: #ffa500;
+    transform: translateY(-3px);
+
+}
+.contact-btn {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #e69500;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background Video Styling */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5) to make it darker or lighter */
+    z-index: 2;
+}
+.home-text {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/ae/25/e4/my-house.jpg?w=1200&h=-1&s=1');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.home-text {
+    max-width: 800px;
+    padding: 0 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.home-text h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.home-text p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.home-text .btn {
+    display: inline-block;
+    background-color: #ffa500;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-text .btn:hover {
+    background-color: #e69500;
+    transform: translateY(-2px);
+}
+.cards-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
